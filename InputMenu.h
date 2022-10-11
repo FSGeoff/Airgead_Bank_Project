@@ -30,7 +30,7 @@ void InputMenu() {
     cin.clear();
     cin.ignore(100, '\n');
 }
-    cout << "Monthly Deposit:" ;
+    cout << "Monthly Deposit: " ;
     while (!(cin >> month)) {
         cout << "Error: Please enter a number" << endl;
         cout << "Monthly Deposit: " ;

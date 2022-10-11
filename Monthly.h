@@ -84,7 +84,7 @@ void MonthlyWithDeposit::CalculateWithDeposit(double t_initialInvestment, double
     //Loops based on numOfYears and calculates interest with a monthly deposit
 	for (unsigned int i = 1; i <= numOfYears; ++i) {
 
-        endOfYearBalance = endOfYearBalance + (endOfYearBalance * interestRate) + (monthlyDeposit * 12);
+        endOfYearBalance = endOfYearBalance + (endOfYearBalance * interestRate);
         yearEndInterestEarned = endOfYearBalance * interestRate;
 		yearEnd.push_back(endOfYearBalance);
 		intEarned.push_back(yearEndInterestEarned);
