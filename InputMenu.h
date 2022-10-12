@@ -24,14 +24,14 @@ void InputMenu() {
     cout << "Press any key to continue... " << endl << endl;
 
     cout << "Initial Investment Amount: ";
-    while (!(cin >> initial)) {
+    while (!(cin >> initial)) { // Validation
     cout << "Error: Please enter a number" << endl;
     cout << "Initial Investment Amount: ";
     cin.clear();
     cin.ignore(100, '\n');
 }
     cout << "Monthly Deposit: " ;
-    while (!(cin >> month)) {
+    while (!(cin >> month)) { // Validation
         cout << "Error: Please enter a number" << endl;
         cout << "Monthly Deposit: " ;
         cin.clear();
@@ -39,14 +39,14 @@ void InputMenu() {
     }
 
     cout << "Annual Interest: ";
-    while (!(cin >> interest)) {
+    while (!(cin >> interest)) { // Validation
         cout << "Error: Please enter a number" << endl;
         cout << "Annual Interest: ";
         cin.clear();
         cin.ignore(100, '\n');
     }
     cout << "Number of Years: ";
-    while (!(cin >> years)) {
+    while (!(cin >> years)) { // Validation
         cout << "Error: Please enter a number" << endl;
         cout << "Number of Years: ";
         cin.clear();
@@ -55,7 +55,7 @@ void InputMenu() {
 cout << endl << endl << endl;
 
 
-    input1.CalculateWithNoDeposit(initial, interest, years);        //Pass input to function (no monthly deposit)
+    input1.CalculateWithNoDeposit(initial, interest, years);      //Pass input to function (no monthly deposit)
     input2.CalculateWithDeposit(initial, month, interest, years); //Pass input to function (monthly deposit)
 
 
